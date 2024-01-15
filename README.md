@@ -34,7 +34,6 @@ const MiddlewareRegistry: Registry = {
     // Define groups of middleware that can be applied together
     groups: {
         auth: [
-            LoginMiddleware,
             RequiredCookiesMiddleware
         ]
     },
