@@ -18,7 +18,7 @@ export const MiddlewareErrorHandler: ErrorHandler = (error, request, response) =
 }
 
 /**
- * OR YOU COULD YOU A SWITCH STATEMENT FOR ERROR EASIER ERROR GROUPING
+ * OR YOU COULD USE A SWITCH STATEMENT FOR EASIER ERROR GROUPING
  */
 
 const MiddlewareSwitchErrorHandler: ErrorHandler = (error, request, response) => {
