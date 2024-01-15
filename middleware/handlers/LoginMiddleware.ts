@@ -40,7 +40,7 @@ const handle: Middleware = async (request, response) => {
 	const missingParameters = requiredQueryParameters.filter(parameter => !searchParams.has(parameter));
 
 	if (missingParameters.length > 0) {
-		console.log("Invalid")
+
 		throw new InvalidLoginUrlError();
 	}
 
@@ -51,7 +51,7 @@ const handle: Middleware = async (request, response) => {
 		if(authRequest.success === false && authRequest.authenticated === false){
 			throw new UnauthorizedError();
 		}
-		return NextResponse.redirect(new URL('https://google.com'))
+		return NextResponse.redirect(new URL('SOME_URL'))
 	}
 	catch(error) {
 		throw new SignatureDecodingError();

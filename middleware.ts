@@ -10,7 +10,9 @@ export async function middleware( request: NextRequest ) {
 	 * Sometimes I have a strange problem that the middleware won't fire for
 	 * every page refresh.
 	 */
-	response.headers.append("x-middleware-cache", "no-cache");
+
+	//response.headers.append("x-middleware-cache", "no-cache");
+	
 	/**
 	 * The response is being passed on to all defined middleware.
 	 */
